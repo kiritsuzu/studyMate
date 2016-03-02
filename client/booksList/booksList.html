@@ -5,7 +5,7 @@
     <div class="container-fluid book">
       <div class="row bookRow">
         <div class="col-sm-2 bookImage">
-          <span><img ng-src="{{ book.volumeInfo.imageLinks.thumbnail }}" /></span>
+          <span><a ng-href="{{ book.accessInfo.webReaderLink }}"><img ng-src="{{ book.volumeInfo.imageLinks.thumbnail }}" /></a></span>
         </div>
         <div class="col-sm-10 bookInfo">
           <span id="bookInfoAuthor"><span class="bookInfoHeader">Title: {{ book.volumeInfo.title }}</span><br>
